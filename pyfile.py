@@ -11,7 +11,7 @@ st.subheader("This is SUBHEADER")
 st.code("This is code chunk")
 st.latex(r''' a = e^3 + \alpha_i + \beta_j''')
 
-image = Image.open(r"D:\Dropbox\wave\projects\streamlit\anim0614.jpg")
+image = Image.open(r"anim0614.jpg")
 st.image(image)
 
 y = np.random.rand(30)
