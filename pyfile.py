@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-import matplotlib.pyplot as plt
+
 
 
 st.title("This is TITLE")
@@ -13,12 +13,6 @@ st.latex(r''' a = e^3 + \alpha_i + \beta_j''')
 
 image = Image.open(r"anim0614.jpg")
 st.image(image)
-
-y = np.random.rand(30)
-x = range(0, 30, 1)
-fig, ax = plt.subplots()
-ax.plot(x, y)
-st.pyplot(fig)
 
 ## for side bar
 st.sidebar.slider("Bar", 0, 100)
